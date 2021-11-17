@@ -7,30 +7,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".client.view.LoginActivity">
-	
-<com.google.android.material.appbar.AppBarLayout
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:theme="@style/AppTheme.AppBarOverlay">
 
-	   <TextView
-        android:id="@+id/myText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Movie App"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:textColor="#fff"
-        />
-	
-	
-	<com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary" 
-	/>
-</com.google.android.material.appbar.AppBarLayout>
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="#680404"
+		android:theme="@style/AppTheme.AppBarOverlay">
+
+		<TextView
+			android:id="@+id/myText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="Movie App"
+			android:textColor="#fff"
+			android:textSize="30dp" />
+
+
+		<com.google.android.material.tabs.TabLayout
+			android:id="@+id/tabs"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#680404" />
+	</com.google.android.material.appbar.AppBarLayout>
 
 	<androidx.viewpager.widget.ViewPager
 		android:id="@+id/view_pager"
