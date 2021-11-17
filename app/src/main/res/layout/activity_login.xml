@@ -31,12 +31,13 @@ android:theme="@style/AppTheme.AppBarOverlay">
             android:background="?attr/colorPrimary" 
 	/>
 </com.google.android.material.appbar.AppBarLayout>
-	
-	    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+	<androidx.viewpager.widget.ViewPager
+		android:id="@+id/view_pager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#0E0E0E"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 		
 	<FrameLayout
         android:layout_width="match_parent"

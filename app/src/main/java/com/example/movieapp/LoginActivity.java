@@ -1,6 +1,7 @@
 package com.example.movieapp;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         LoginPagerAdapter sectionsPagerAdapter = new LoginPagerAdapter(this, getSupportFragmentManager());
         ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
-
+       // getWindow().getDecorView().setBackgroundColor(Color.BLACK);
       //  TabLayout tabs = findViewById(R.id.tabs);
 
     }
