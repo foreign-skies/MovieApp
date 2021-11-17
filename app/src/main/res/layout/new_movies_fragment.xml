@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:id="@+id/container"
 	android:layout_width="match_parent"
@@ -10,36 +11,94 @@
 	tools:context=".client.view.main.NewMoviesFragment">
 
 	<GridLayout
-		android:paddingTop="200dp"
-		android:layout_width="wrap_content"
+		android:layout_width="300dp"
 		android:layout_height="match_parent"
 		android:layout_gravity="right"
 		android:columnCount="1"
 		android:rowCount="7"
 		android:useDefaultMargins="true">
 
-		<EditText
-			android:id="@+id/username"
-			android:layout_width="200dp"
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:gravity="top|left"
-			android:hint="@newmoviesfragment"
-			android:inputType="textPersonName"></EditText>
+			android:layout_gravity="center"
+			android:layout_marginBottom="100dp"
+			android:text="New Movies"
+			android:textColor="#FFFFFF"
+			android:textSize="30sp" />
 
-		<EditText
-			android:id="@+id/password"
-			android:layout_width="200dp"
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:gravity="top|left"
-			android:hint="password"
-			android:inputType="textPersonName"></EditText>
+			android:layout_gravity="left"
+			android:text="Netflix"
+			android:textColor="#FFFFFF"
+			android:textSize="30sp" />
 
-		<Button
-			android:id="@+id/LoginButton"
-			android:layout_width="200dp"
+		<GridLayout
+			android:layout_width="300dp"
+			android:layout_height="100dp"
+			android:layout_gravity="right"
+			android:columnCount="3"
+			android:rowCount="1"
+			android:useDefaultMargins="true" >
+
+			<ImageView
+				android:id="@+id/imageView3"
+				android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/hulu" />
+
+			<ImageView
+				android:id="@+id/imageView2"
+				android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/hulu" />
+
+			<ImageView
+				android:id="@+id/imageView"
+				android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/netflix" />
+		</GridLayout>
+
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_centerInParent="true"
-			android:text="Sign In" />
+			android:layout_gravity="left"
+			android:text="Hulu"
+			android:textColor="#FFFFFF"
+			android:textSize="30sp" />
+
+		<GridLayout
+			android:layout_width="300dp"
+			android:layout_height="100dp"
+			android:layout_gravity="right"
+			android:columnCount="3"
+			android:rowCount="1"
+			android:useDefaultMargins="true">
+
+			<ImageView
+				android:id="@+id/imageView3"
+				android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/hulu" />
+
+			<ImageView
+				android:id="@+id/imageView2"
+				android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/hulu" />
+
+			<ImageView
+				android:id="@+id/imageView"
+				android:layout_width="100dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/netflix" />
+		</GridLayout>
 
 	</GridLayout>
 
