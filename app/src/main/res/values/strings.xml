@@ -7,6 +7,10 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="servicesTabTitle">Services</string>
+	<string name="newMoviesTabTitle">New Movies</string>
+	<string name="chooseMovieTabTitle">Choose Movie</string>
+	<string name="recommendationsTabTitle">Recommendations</string>
+	 <string name="hello_first_fragment">Hello first fragment. Arg: %1$s</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
