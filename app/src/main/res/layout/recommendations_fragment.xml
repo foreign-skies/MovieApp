@@ -10,36 +10,106 @@
 	tools:context=".client.view.main.RecommendationsFragment">
 
 	<GridLayout
-		android:paddingTop="200dp"
-		android:layout_width="wrap_content"
+		android:layout_width="300dp"
 		android:layout_height="match_parent"
 		android:layout_gravity="right"
 		android:columnCount="1"
 		android:rowCount="7"
 		android:useDefaultMargins="true">
 
-		<EditText
-			android:id="@+id/username"
-			android:layout_width="200dp"
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:gravity="top|left"
-			android:hint="@recommendationsfragment"
-			android:inputType="textPersonName"></EditText>
+			android:layout_gravity="center"
+			android:layout_marginBottom="100dp"
+			android:text="For You"
+			android:textColor="#FFFFFF"
+			android:textSize="30sp" />
 
-		<EditText
-			android:id="@+id/password"
-			android:layout_width="200dp"
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:gravity="top|left"
-			android:hint="password"
-			android:inputType="textPersonName"></EditText>
+			android:layout_gravity="left"
+			android:text="Netflix"
+			android:textColor="#FFFFFF"
+			android:textSize="30sp" />
 
-		<Button
-			android:id="@+id/LoginButton"
-			android:layout_width="200dp"
+		<GridLayout
+			android:layout_width="300dp"
+			android:layout_height="100dp"
+			android:layout_gravity="right"
+			android:columnCount="4"
+			android:rowCount="1"
+			android:useDefaultMargins="true">
+
+			<ImageView
+				android:id="@+id/imageView3"
+				android:layout_width="73dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/the_patriot" />
+
+			<ImageView
+				android:id="@+id/imageView2"
+				android:layout_width="61dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/conjuring2" />
+
+			<ImageView
+				android:id="@+id/imageView"
+				android:layout_width="60dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/midsommar" />
+
+			<ImageView
+				android:id="@+id/imageView4"
+				android:layout_width="60dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/armyofthedead" />
+		</GridLayout>
+
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_centerInParent="true"
-			android:text="Sign In" />
+			android:layout_gravity="left"
+			android:text="Hulu"
+			android:textColor="#FFFFFF"
+			android:textSize="30sp" />
+
+		<GridLayout
+			android:layout_width="300dp"
+			android:layout_height="100dp"
+			android:layout_gravity="right"
+			android:columnCount="4"
+			android:rowCount="1"
+			android:useDefaultMargins="true">
+
+			<ImageView
+				android:id="@+id/imageView3"
+				android:layout_width="73dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ltroi" />
+
+			<ImageView
+				android:id="@+id/imageView2"
+				android:layout_width="61dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/logan" />
+
+			<ImageView
+				android:id="@+id/imageView"
+				android:layout_width="60dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/tangled" />
+
+			<ImageView
+				android:id="@+id/imageView4"
+				android:layout_width="60dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/deadpool" />
+		</GridLayout>
 
 	</GridLayout>
 
