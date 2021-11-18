@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:id="@+id/container"
 	android:layout_width="match_parent"
@@ -10,38 +11,94 @@
 	tools:context=".client.view.main.ChooseMovieFragment">
 
 	<GridLayout
-		android:paddingTop="200dp"
 		android:layout_width="wrap_content"
 		android:layout_height="match_parent"
-		android:layout_gravity="right"
 		android:columnCount="1"
 		android:rowCount="7"
 		android:useDefaultMargins="true">
 
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="50dp"
+			android:text="Choose a Movie For Me"
+			android:textColor="#FFFFFF"
+			android:textSize="30sp" />
+
 		<EditText
 			android:id="@+id/username"
-			android:layout_width="200dp"
-			android:layout_height="wrap_content"
+			android:layout_width="300dp"
+			android:layout_height="35dp"
+			android:layout_marginLeft="50dp"
+			android:layout_marginTop="20dp"
+			android:background="#373837"
 			android:gravity="top|left"
-			android:hint="@choosemoviefragment"
-			android:inputType="textPersonName"></EditText>
+			android:hint="  Number of Movies"
+			android:inputType="textPersonName"
+			android:textColor="#919994"
+			android:textColorHint="#919994"
+			android:textSize="24sp"></EditText>
 
 		<EditText
 			android:id="@+id/password"
-			android:layout_width="200dp"
-			android:layout_height="wrap_content"
+			android:layout_width="300dp"
+			android:layout_height="35dp"
+			android:layout_marginLeft="50dp"
+			android:layout_marginTop="10dp"
+			android:background="#373837"
 			android:gravity="top|left"
-			android:hint="password"
-			android:inputType="textPersonName"></EditText>
+			android:hint="  Genre"
+			android:inputType="textPersonName"
+			android:textColor="#919994"
+			android:textColorHint="#919994"
+			android:textSize="24sp"></EditText>
+
+		<EditText
+			android:id="@+id/password"
+			android:layout_width="300dp"
+			android:layout_height="35dp"
+			android:layout_marginLeft="50dp"
+			android:layout_marginTop="10dp"
+			android:background="#373837"
+			android:gravity="top|left"
+			android:hint="  Release Years"
+			android:inputType="textPersonName"
+			android:textColor="#919994"
+			android:textColorHint="#919994"
+			android:textSize="24sp"></EditText>
 
 		<Button
-			android:id="@+id/LoginButton"
+			android:id="@+id/generate"
 			android:layout_width="200dp"
-			android:layout_height="wrap_content"
+			android:layout_height="100dp"
 			android:layout_centerInParent="true"
-			android:text="Sign In" />
+			android:layout_marginLeft="100dp"
+			android:layout_marginTop="20dp"
+			android:background="#F10E0E"
+			android:text="Generate"
+			android:textColor="#FFFBFB"
+			android:textSize="20sp" />
+
+		<TextView
+			android:id="@+id/netflixText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="left"
+			android:layout_marginLeft="50dp"
+			android:text="Netflix"
+			android:textColor="#FFFFFF"
+			android:textSize="30sp" />
+
+		<ImageView
+			android:id="@+id/titanicImage"
+			android:layout_width="100dp"
+			android:layout_height="133dp"
+			android:layout_gravity="center"
+			android:src="@drawable/titanic" />
 
 	</GridLayout>
+
 
 
 </LinearLayout>
